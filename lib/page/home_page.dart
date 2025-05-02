@@ -49,7 +49,6 @@ class _HomePageState extends State<HomePage> {
                   },
                   child: Text("Change Color"),
                 ),
-
                 SizedBox(height: 10),
                 CupertinoButton(
                   onPressed: () {
@@ -57,6 +56,18 @@ class _HomePageState extends State<HomePage> {
                     setState(() {});
                   },
                   child: Text("Change Radius"),
+                ),
+                Divider(),
+                SizedBox(height: 10),
+                AnimatedOpacity(
+                  opacity: 0.4,
+                  duration: Duration(milliseconds: 500),
+                  child: Text(
+                    "Hide me",
+                    style: TextStyle(
+                      fontSize: 30,
+                    ),
+                  ),
                 ),
               ],
             ),
